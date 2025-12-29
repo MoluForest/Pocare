@@ -40,7 +40,7 @@ onMounted(() => {
   const saved = localStorage.getItem('pocare-unlocked-level')
   if (saved) {
     const n = Number(saved)
-    if (!Number.isNaN(n) && n >= 1 && n <= lessons.length) {
+    if (!Number.isNaN(n) && n >= 1) {
       unlockedLevel.value = n
     }
   }
